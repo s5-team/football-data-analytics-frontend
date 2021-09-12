@@ -1,8 +1,9 @@
 import { Component, Vue } from 'vue-property-decorator';
-
 @Component
 export default class ExampleButton extends Vue {
-  public created() {
-    console.log('created invoked');
+  private busu: string = 'hiraba';
+
+  public created(): void {
+    console.log('created invoked' + this.busu);
   }
 }
