@@ -6,4 +6,8 @@ export default class ExampleButton extends Vue {
   public created(): void {
     console.log('created invoked' + this.busu);
   }
+
+  public showAlert(): void {
+    window.alert('Hello Hiraba!');
+  }
 }
