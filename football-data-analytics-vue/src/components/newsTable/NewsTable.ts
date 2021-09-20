@@ -10,7 +10,7 @@ interface News {
 export default class NewsTable extends Vue {
     @Prop() public news!: News[];
 
-    public mounted(): void {
+    public created(): void {
         axios.get('http://localhost:8080/news')
         .then((res) => {
             this.news = res.data;
