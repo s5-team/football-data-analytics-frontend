@@ -1,6 +1,8 @@
 <template>
   <div>
-    <b-table striped hover :items="news"></b-table>
+    <b-list-group>
+      <b-list-group-item v-for="n in news" v-bind:key="n.title" v-bind:href="n.url">{{ n.title }}</b-list-group-item>
+    </b-list-group>
   </div>
 </template>
 
