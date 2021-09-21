@@ -7,7 +7,7 @@ interface News {
 }
 
 @Component
-export default class NewsTable extends Vue {
+export default class NewsList extends Vue {
     @Prop() public news!: News[];
 
     public created(): void {

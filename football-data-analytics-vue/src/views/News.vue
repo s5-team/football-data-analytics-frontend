@@ -1,17 +1,17 @@
 <template>
   <div class="news">
     <h1>This is an news page</h1>
-    <news-table></news-table>
+    <news-list></news-list>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import NewsTable from '@/components/newsTable/NewsTable.vue'; // @ is an alias to /src
+import NewsList from '@/components/newsList/NewsList.vue'; // @ is an alias to /src
 
 @Component({
   components: {
-    NewsTable,
+    NewsList,
   },
 })
 export default class Home extends Vue {}
