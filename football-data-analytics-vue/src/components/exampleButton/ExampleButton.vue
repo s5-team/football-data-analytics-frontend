@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="mybutton">MyButton</button>
+    <button class="mybutton" @click="showAlert()">MyButton</button>
     <b-button>Button</b-button>
     <b-button variant="danger">Button</b-button>
     <b-button variant="success">Button</b-button>
