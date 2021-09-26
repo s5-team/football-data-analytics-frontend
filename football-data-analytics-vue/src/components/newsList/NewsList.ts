@@ -8,18 +8,12 @@ interface News {
 
 @Component
 export default class NewsList extends Vue {
-    @Prop() public news!: News[];
+    private news: News[] = [];
 
     public created(): void {
         axios.get('http://localhost:8080/news')
         .then((res) => {
             this.news = res.data;
         });
-    }
-
-    public data() {
-        return {
-            news: this.news, // "this: this.news"でも動くのはなぜ？
-        };
     }
 }
